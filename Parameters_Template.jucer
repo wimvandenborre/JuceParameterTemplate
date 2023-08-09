@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="XoVj0n" name="Parameters_Template" projectType="audioplug"
+              useAppConfig="0" addUsingNamespaceToJuceHeader="0" displaySplashScreen="1"
+              jucerFormatVersion="1" pluginFormats="buildStandalone">
+  <MAINGROUP id="F7FO9n" name="Parameters_Template">
+    <GROUP id="{505A69F7-0AB1-342D-46D7-682766AAE76B}" name="Modules">
+      <GROUP id="{902E4E50-80C5-517D-E75B-2D019D8E0CA7}" name="custom_module_test">
+        <GROUP id="{BFE0E672-3DA5-BE9C-2500-A09F9F4ABCBC}" name="Source">
+          <FILE id="XcI0DM" name="DummyLabel.cpp" compile="1" resource="0" file="Modules/custom_module_test/Source/DummyLabel.cpp"/>
+          <FILE id="lptaPK" name="DummyLabel.h" compile="0" resource="0" file="Modules/custom_module_test/Source/DummyLabel.h"/>
+        </GROUP>
+        <FILE id="LGaiHd" name="custom_module_test.cpp" compile="1" resource="0"
+              file="Modules/custom_module_test/custom_module_test.cpp"/>
+        <FILE id="aI1VGl" name="custom_module_test.h" compile="0" resource="0"
+              file="Modules/custom_module_test/custom_module_test.h"/>
+      </GROUP>
+      <GROUP id="{52C95CBF-AD46-98AC-243C-F1AC62E7465A}" name="shared_plugin_helpers">
+        <GROUP id="{7055217E-17C3-9CCA-C4F2-90ADB9E3646A}" name="ProcessorBase">
+          <FILE id="WIrc7f" name="Helpers.h" compile="0" resource="0" file="Modules/shared_plugin_helpers/ProcessorBase/Helpers.h"/>
+          <FILE id="VymN16" name="ProcessorBase.cpp" compile="1" resource="0"
+                file="Modules/shared_plugin_helpers/ProcessorBase/ProcessorBase.cpp"/>
+          <FILE id="ShZnG0" name="ProcessorBase.h" compile="0" resource="0" file="Modules/shared_plugin_helpers/ProcessorBase/ProcessorBase.h"/>
+        </GROUP>
+        <FILE id="ggbPOa" name="shared_plugin_helpers.cpp" compile="1" resource="0"
+              file="Modules/shared_plugin_helpers/shared_plugin_helpers.cpp"/>
+        <FILE id="zU7qqd" name="shared_plugin_helpers.h" compile="0" resource="0"
+              file="Modules/shared_plugin_helpers/shared_plugin_helpers.h"/>
+      </GROUP>
+      <GROUP id="{0F471DC8-8C46-C4BD-BDF5-9E882658916D}" name="shared_processing_code">
+        <GROUP id="{7C2F9D5B-66C9-8934-0942-ABCE28893132}" name="Source">
+          <FILE id="ljQGBm" name="WhiteNoise.cpp" compile="1" resource="0" file="Modules/shared_processing_code/Source/WhiteNoise.cpp"/>
+          <FILE id="TgPz60" name="WhiteNoise.h" compile="0" resource="0" file="Modules/shared_processing_code/Source/WhiteNoise.h"/>
+        </GROUP>
+        <FILE id="Tws8kX" name="shared_processing_code.cpp" compile="1" resource="0"
+              file="Modules/shared_processing_code/shared_processing_code.cpp"/>
+        <FILE id="OFWYfH" name="shared_processing_code.h" compile="0" resource="0"
+              file="Modules/shared_processing_code/shared_processing_code.h"/>
+      </GROUP>
+      <FILE id="dbR9Vq" name="CMakeLists.txt" compile="0" resource="1" file="Modules/CMakeLists.txt"/>
+    </GROUP>
+    <GROUP id="{E6B44C97-2504-798E-38AB-8B68CB3AAF18}" name="Source">
+      <GROUP id="{789371A6-1265-2DB8-4E6D-DF1761406FD0}" name="audio"/>
+      <GROUP id="{E6B3E2CA-863A-3232-916C-A2A285ED3664}" name="gui">
+        <FILE id="GxfJMk" name="Lfo.h" compile="0" resource="0" file="Source/gui/Lfo.h"/>
+        <FILE id="lj2it5" name="Lfos.h" compile="0" resource="0" file="Source/gui/Lfos.h"/>
+        <FILE id="prPzMC" name="SinglePanel.cpp" compile="1" resource="0" file="Source/gui/SinglePanel.cpp"/>
+        <FILE id="uudDBO" name="SinglePanel.h" compile="0" resource="0" file="Source/gui/SinglePanel.h"/>
+      </GROUP>
+      <GROUP id="{1C3593E0-7CE5-D246-99C3-0B85D2D8F0CA}" name="params">
+        <FILE id="wO00M8" name="LfoParams.h" compile="0" resource="0" file="Source/params/LfoParams.h"/>
+        <FILE id="NmbpcE" name="Parameters.h" compile="0" resource="0" file="Source/params/Parameters.h"/>
+        <FILE id="xS8rSn" name="SinglePanelParams.h" compile="0" resource="0"
+              file="Source/params/SinglePanelParams.h"/>
+      </GROUP>
+      <FILE id="ycnfQl" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="bOCcfv" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="zE1zSj" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="HT0dbp" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Parameters_Template"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Parameters_Template"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE7/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE7/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../JUCE7/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../JUCE7/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../JUCE7/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../JUCE7/modules"/>
+        <MODULEPATH id="juce_core" path="../JUCE7/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE7/modules"/>
+        <MODULEPATH id="juce_dsp" path="../JUCE7/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE7/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE7/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE7/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE7/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+  </MODULES>
+</JUCERPROJECT>
